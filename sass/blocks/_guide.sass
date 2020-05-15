@@ -1,0 +1,76 @@
+.guide
+    &__inner
+        padding: 70px 0 100px 0
+    &__title
+        color: $black
+        max-width: 651px
+        margin: auto
+    &__subtitle
+        margin: 59px 0
+    &__list
+        display: flex
+        justify-content: space-between
+        &-item
+            display: flex
+            flex-direction: column
+            &__title
+                font-size: 13px
+                font-weight: 300
+                line-height: 20px
+                color: $black
+                max-width: 145px
+                text-align: center
+            &__img
+                border: 3px solid $main-color
+                border-radius: 50%
+                padding: 32px
+                width: 100px
+                height: 100px
+                margin: 0 auto 30px
+                position: relative
+                &::after
+                    background-image: url("../images/guide_arrow.svg")
+                    content: ""
+                    position: absolute
+                    width: 72px
+                    height: 25px
+                    top: -10px
+                    right: -115px
+                &-last
+                    &::after
+                        display: none
+                img              
+                    width: 35px
+                    height: 35px
+
+@media(max-width: 1200px)
+    .guide
+        &__list
+            &-item
+                &__img
+                    &::after
+                        display: none
+
+@media(max-width: 880px)
+    .guide
+        &__inner
+            padding: 20px 0 75px 0
+        &__list
+            max-width: 370px
+            flex-wrap: wrap
+            margin: 0 auto
+            &-item
+                &:last-child
+                    margin: 0 auto
+                &__title
+                    margin-bottom: 30px
+@media(max-width: 330px)
+    .guide
+        &__list
+            max-width: 220px
+            flex-wrap: wrap
+            margin: 0 auto
+            &-item
+                margin: 0 auto
+            
+                   

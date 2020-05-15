@@ -1,0 +1,49 @@
+.reviews
+    background: #f5f5f5 url(../images/reviews-bg.jpg) repeat-y
+    background-size: 50% auto
+    &__inner
+        padding: 100px 0
+    &__title
+        margin-bottom: 100px
+    &__arrows
+        max-width: 120px
+        display: flex
+        justify-content: space-between
+        margin: auto
+        margin-top: 65px
+        &-left, &-right
+            &:hover
+                cursor: pointer
+.slick
+    &-list
+        margin: 0 -50px
+    &-slide
+        margin: 0 50px
+@media(max-width: 1250px)
+    .reviews
+        &__slider
+            margin: auto
+            max-width: 800px
+
+@media(max-width: 960px)
+    .reviews
+        &__slider
+            width: 370px
+    .slick
+        &-list
+            margin: 0 -20px
+        &-slide
+            margin: 0 20px
+
+@media(max-width: 490px)
+    .reviews
+        background-image: none
+        &__inner
+            padding: 40px 0 60px 0
+        &__title
+            margin-bottom: 41px
+        &__slider
+            width: 246px
+            img
+                width: 100%
+        

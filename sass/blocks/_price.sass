@@ -1,0 +1,53 @@
+.price
+    &__inner
+        padding: 100px 0
+    &__title
+        color: $black
+        max-width: 515px
+        margin: 0 auto
+    &__subtitle
+        margin: 59px 0
+    &__boxes
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        margin: 0 auto
+        &-item
+            max-width: 370px
+            box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1)
+            background-color: #ffffff
+            margin-bottom: 30px
+            display: flex
+            flex-direction: column
+            align-items: center
+            &__title
+                font-size: 16px
+                margin: 30px 0
+            &__click
+                margin-bottom: 40px
+                font-size: 14px
+                font-weight: 700
+                line-height: 18px
+                border-bottom: 3px $main-color solid
+                &:hover
+                    cursor: pointer
+                
+@media(max-width: 1200px)
+    .price
+        &__boxes
+            max-width: 800px
+
+@media(max-width: 810px)
+    .price
+        &__inner
+            padding: 50px 0 35px 0
+        &__boxes
+            max-width: 370px
+            &-item
+                &__title
+                    font-size: 13px
+        &__subtitle
+            margin: 25px 0 55px 0
+            &-item
+                &__title
+                    font-size: 14px

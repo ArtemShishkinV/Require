@@ -1,0 +1,58 @@
+.header
+    background-color: #f5f5f5
+    &__inner
+        padding: 50px 0
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__subtitle
+        display: inline-block
+        max-width: 462px
+        font-size: 18px
+        font-weight: 700
+        line-height: 20px
+        margin: 40px 0 70px 0
+    &__img
+        box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.05), 16px 22px 35px rgba(0, 0, 0, 0.05)
+    &__list
+        &-item
+            position: relative
+            margin-bottom: 30px
+            max-width: 230px
+            line-height: 24px
+            font-size: 14px
+            padding-left: 70px
+            &::before
+                position: absolute
+                content: ""
+                left: 0
+                top: 50%
+                transform: translateY(-50%)
+                width: 20px
+                height: 20px
+                border: 2px solid $main-color
+                border-radius: 50%
+                padding: 10px
+                background-repeat: no-repeat
+                background-position: center
+            &_1::before
+                background-image: url("../../images/list-item-img1.png")
+            &_2::before
+                background-image: url("../../images/list-item-img2.png")
+            &_3::before
+                background-image: url("../../images/list-item-img3.png")
+
+@media(max-width: 1000px)
+    .header
+        &__subtitle
+            margin: 30px 0 40px 0
+            font-size: 16px
+        &__img
+            width: 440px
+        &__list
+            &-item
+                font-size: 12px
+@media(max-width: 800px)
+    .header
+        &__inner
+            flex-direction: column

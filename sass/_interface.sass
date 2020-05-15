@@ -1,0 +1,68 @@
+*
+    box-sizing: border-box
+body
+    font-family: $main-font
+    color: $text-color
+    font-weight: 400
+.container
+    max-width: 1170px
+    width: 96%
+    margin: 0 auto
+img
+    max-width: 100%
+
+input
+    padding: 26px
+    border-radius: 10px
+    border: 1px solid #dddddd
+    font-size: 15px
+    font-weight: 300
+input::placeholder
+    font-size: 15px
+    font-weight: 300
+
+.button
+    border-radius: 10px
+    background-color: $main-color
+    padding: 18px 30px
+    border: none
+    transition: 0.3s
+.button:hover
+    border: 3px solid $main-color
+    background-color: #fff
+    transition: 0.3s
+.phone
+    display: block
+    margin-top: 9px
+    text-decoration: none
+    font-family: $main-font
+    color: $text-color
+    font-weight: 700
+    font-size: 20px
+h1 
+    max-width: 462px
+    font-size: 32px
+    line-height: 40px
+    font-weight: 700
+h2 
+    font-size: 26px
+    font-weight: 700
+    line-height: 45px
+    text-align: center
+h4
+    color: $black
+    font-size: 20px
+    font-weight: 300
+    line-height: 45px
+    text-align: center
+@media(max-width: 1000px)
+    h1
+        font-size: 24px
+        line-height: 32px
+@media(max-width: 760px)
+    h2
+        font-size: 18px
+        line-height: 32px
+    h4
+        font-size: 14px
+        line-height: 24px
