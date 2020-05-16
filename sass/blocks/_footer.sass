@@ -1,0 +1,67 @@
+.footer
+    position: relative 
+    &__bg
+        position: absolute
+        top: 0
+        left: 0
+        max-width: 50%
+        height: 100%
+    &__inner
+        padding: 60px 0 60px 0
+        padding-left: 50%
+    &__address
+        max-width: 293px
+        margin-left: 215px
+        &-item
+            display: flex
+            align-items: center
+            margin-bottom: 40px
+            img
+                width: 20px
+                height: 20px
+            &-img1
+                width: 14px !important
+                margin-right: 6px
+            &__text
+                display: flex
+                flex-direction: column
+                margin-left: 25px
+                font-size: 16px
+                font-weight: 400
+                color: $black
+                line-height: 22px
+                max-width: 145px
+                &-info
+                    font-weight: 700
+    &__phone
+        font-size: 16px
+        margin-top: 0
+
+@media(max-width: 1250px)
+    .footer
+        &__bg
+            display: none
+        &__inner
+            padding: 60px auto
+            padding-left: 0
+        &__address
+            margin: 0 auto
+            max-width: 750px
+            &__wrapper
+                display: flex
+                justify-content: space-between
+                align-items: start
+        &__title
+            margin: 0 auto
+            margin-bottom: 40px
+            max-width: 293px
+            text-align: center
+
+@media(max-width: 850px)
+    .footer
+        &__address
+            &-item
+                width: 190px
+            &__wrapper
+                flex-direction: column
+                align-items: center

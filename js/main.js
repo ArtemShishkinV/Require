@@ -7,7 +7,7 @@ $(function(){
         nextArrow: ".reviews__arrows-right",
         responsive: [
           {
-            breakpoint: 1250,
+            breakpoint: 1300,
               settings: {
                 slidesToShow: 2
               }
